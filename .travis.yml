@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -7,4 +8,3 @@ before_install:
 
 script:
   - docker run lkupke/docker-aws npm run test -- --coverage
-  
